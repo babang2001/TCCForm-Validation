@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>TWITCH</title>
+ <title>FORM VALIDATION</title>
  <style>
+ 
+
  input[type=text], input[type=password] {
  background-color: white;
- color: purple;
- padding: 5px 100px;
+ color: black;
+ padding: 10px 100px;
  margin: 5px;
  border-radius: 5px;
- border: 2px solid #ccc;
+ border: 1px solid #ccc;
  box-sizing: border-box;
+ 
  }
  input[type=submit] {
- background-color: dirty white;
+ background-color: gray;
  color: white;
  padding: 7px 150px;
  border: none;
@@ -22,10 +25,10 @@
  }
 
 input[type=option] {
-background-color: dirty white;
+background-color: white;
 color: black;
-border: 2px solid #ccc;
-border-radius: 1px
+border: 1px solid #ccc;
+border-radius: 1px;
 
 }
  .error {
@@ -34,14 +37,87 @@ border-radius: 1px
  margin: 5px;
  }
  .success {
- color: purple;
+ color: gray;
  font-size: 14px;
  margin: 5px;
  }
  
+ 
  </style>
 </head>
+<body bgcolor="#424242">
+<div style="background-color:ash;" width="50%" height="100%">
+<center><img src="wattpad-logo.jpeg" alt="wattpad-logo.jpeg" width="120" height="50"></center>
+<center><p> Where stories live</p></center>
+ <Center><h2 style="color:black;">Join Wattpad</h2></Center>
+ <center><p><h5>Be part of a global community of readers and writers, all connected through the power of story.</p></h5></center>
+ 
+</div>
+<tr>
+<br>
+ <form>
+ <tr><label for="Username" ><td>Username</td></label><tr>
+ <input type="text" id="Username" 
+name="Username" required><br></tr>
+ </br>
+ <br>
+<tr><label for="E-mail" ><td>E-mail</td></label>
+<input type="text" id="E-mail" 
+name="Enter E-mail" required><br></tr>
+ </br>
+ <br>
+ <tr><label for="New Password"><td>New Password</td> </label>
+ <input type="text" id="New Password" 
+name="New Password" required><br></tr>
+</br>
+<br>
+ <tr><label for="Confirm Password"><td>Confirm Password</td> </label>
+ <input type="text" id="Confirm Password" 
+name="Confirm Password" required><br></tr>
+</br>
 
-<div style="background-color:black;" width="50%" height="100%">
-<center><img src="" alt="Twitch logo.jpg" width="50" height="50"></center>
- <Center><h1 style="color:black;">Join Twitch Today</h1></Center>
+<br>
+<tr><label for="Birthday">Birthday</label></tr>
+</br>
+
+
+
+<br>
+<select>
+<center><option>Month</option> </center>
+<option value="Jan">January</option>
+<option value="Feb">February</option>
+<option value="Mar">March</option> 
+<option value="Mar">April</option>
+<option value="Mar">May</option>
+<option value="Mar">June</option>
+<option value="Mar">July</option>
+<option value="Mar">August</option>
+<option value="Mar">September</option>
+<option value="Mar">October</option>
+<option value="Mar">November</option>
+<option value="Dec">December</option>
+</select>
+</br>
+
+<br>
+<tr><label for="Date Of Birth">Day:</label>
+<input type="option" id="Day" 
+name="Day" required><br></tr>
+</br>
+
+<br>
+<tr><label for="Date Of Birth">Year:</label>
+<input type="option" id="Year" 
+name="Year" required><br></tr>
+</br>
+<input type="checkbox" >
+  <label for="checkbox2">I have read and agree to Wattpad's Terms of Service and Privacy Policy.</label><br>
+<br>
+<input type="submit" style="color:black;" value="Sign up">
+ </form>
+ <div id="message"></div>
+ </br>
+ <script>
+</body>
+</html>
